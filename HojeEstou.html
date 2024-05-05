@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <title>T-shirts do Mercado</title>
+<style>
+body{
+ width: 100vh;
+  height: 100vh;
+}
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:2em;
+}
+</style>
+  </head>
+
+  <body>  
+	<div>
+      <h1>Hoje estou ...</h1>
+      <h3 id="Rtexto"></h3>
+      </div>
+<script>
+
+var estadosAlma = [
+'Disposto a tudo!<br> E tu?<br>&#128521;',
+'Feliz <br>&#128522;',
+'De rastos <br> &#129298;',
+'FURIOSO <br><br> &#128565;&#129327;',
+'Amoroso <br> &#128538;&#128525;',
+'Com vontade de subir aos postes e apalpar o cú às lâmpadas <br> &#128520;',
+'Aqui, mas vou já embora.<br> &#129322;',
+'A cheirar mal do Befe.<br> &#129323;',
+'Que nem posso !!! <br>Baza mas é daqui <br> &#129324;',
+'Disposto a mandar-te à M*rd@ <br> &#129326;'
+]
+let meuEstado = estadosAlma[Math.floor(Math.random() * estadosAlma.length)]
+document.getElementById("Rtexto").innerHTML =(meuEstado)
+
+</script>
+  </body>
+</html>
